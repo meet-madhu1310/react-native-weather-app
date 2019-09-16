@@ -12,7 +12,7 @@ const SearchBar = () => (
                 <Input placeholder="enter city" />
             </Item>
             <Button style={styles.searchButton} transparent>
-                <Text style={{color: '#02732A'}}>Search</Text>
+                <Text style={{color: '#02732A', marginLeft: -10}}>Search</Text>
             </Button>
         </Header>
     </Container>
@@ -30,11 +30,13 @@ const styles = StyleSheet.create({
         margin: 0
     },
     searchbar: {
-        marginTop: -50,
+        marginTop: -10,
         height: 40,
         borderRadius: 10
     },
     searchButton: {
-        marginTop: -50,
+        marginTop: -10,
+        maxWidth: 80,
+        padding: 0
     }
 })
